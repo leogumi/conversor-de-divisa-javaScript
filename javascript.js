@@ -54,3 +54,10 @@ function guardar_localstorage() {
 };
 let nombre = "Dolar"
 localStorage.setItem("nombre", nombre);
+
+const btnSwitch = document.querySelector("#switch");
+
+btnSwitch.addEventListener("click", () => {
+    document.body.classList.toggle("dark");
+    btnSwitch.classList.toggle("active")
+});
